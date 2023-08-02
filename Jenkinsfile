@@ -10,12 +10,12 @@ pipeline {
         stage ('Testing Stage') {
 
             steps {
-                    bat 'mvn test'
+                    sh 'mvn test'
             }
         }
         stage ('Install Stage') {
             steps {
-                    echo 'mvn install'
+                    sh 'mvn install'
             }
         }
     }
